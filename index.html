@@ -28,7 +28,7 @@
     />
   </head>
   <!-- body started here -->
-  <body class="font-roboto w-full max-w-[1440px] mx-auto border">
+  <body class="font-roboto w-full max-w-[1440px] mx-auto">
     <!-- header section started -->
     <header
       class="md:min-h-[1000px] w-full px-5 md:bg-[url(./images/banner.png)] bg-no-repeat bg-right-top"
@@ -37,7 +37,7 @@
         class="w-full max-w-[1150px] mx-auto flex justify-between items-center py-2"
       >
         <!-- left -->
-        <div>
+        <div class="hidden md:block">
           <ul
             class="flex items-center gap-5 md:gap-10 lg:gap-14 text-base text-blue-800"
           >
@@ -54,17 +54,19 @@
 
         <!-- right -->
         <div>
-          <button class="px-16 text-white bg-blue-950 py-1">Buy Now</button>
+          <button class="px-10 md:px-12 lg:px-16 text-white bg-blue-950 py-1">
+            Buy Now
+          </button>
         </div>
       </nav>
 
       <!-- banner section -->
       <section class="w-full md:min-h-[1000px] mt-10 md:mt-0">
         <div
-          class="w-full max-w-[1150px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:min-h-[1000px]"
+          class="w-full max-w-[1150px] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 items-center md:min-h-[1000px]"
         >
           <!-- first part -->
-          <div>
+          <div class="md:col-span-2 lg:col-span-1">
             <h2 class="text-2xl md:text-4xl lg:text-5xl text-blue-900 mb-3">
               Introduce Your Product Quickly & Effectively
             </h2>
@@ -77,14 +79,14 @@
               quis, sem. Nulla consequat massa quis enim.
             </p>
             <!-- buttons -->
-            <div class="mt-5 md:mt-16">
+            <div class="mt-5 md:mt-16 text-center md:text-left">
               <button
                 class="px-12 text-white bg-blue-950 py-1 hover:bg-white hover:text-blue-950 hover:border hover:border-blue-950 border border-blue-950 transition duration-300"
               >
                 Purchase UI Kit
               </button>
               <button
-                class="px-12 text-white bg-blue-950 py-1 hover:bg-white hover:text-blue-950 hover:border-blue-950 border border-blue-950 transition duration-300"
+                class="px-12 text-white bg-blue-950 py-1 hover:bg-white hover:text-blue-950 hover:border-blue-950 border border-blue-950 transition duration-300 mt-4 md:mt-0"
               >
                 Learn More
               </button>
@@ -242,8 +244,10 @@
       </section>
     </main>
     <footer class="bg-[#E7ECFF] w-full">
-      <div class="w-full max-w-[1150px] mx-auto ">
-        <div class="flex items-center justify-between gap-4 pt-14 pb-8 border-b border-gray-400">
+      <div class="w-full max-w-[1150px] mx-auto">
+        <div
+          class="flex items-center justify-between gap-4 pt-14 pb-8 border-b border-gray-400"
+        >
           <div>
             <p class="text-gray-500">©2023 Yourcompany</p>
           </div>
