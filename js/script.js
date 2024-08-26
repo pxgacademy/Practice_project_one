@@ -15,7 +15,7 @@ tailwind.config = {
         customBgPosition: "25px 50px",
       },
       fontFamily: {
-        manrope: ["Manrope", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
     },
   },

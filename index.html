@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- Fontawesome cdn -->
@@ -28,9 +28,74 @@
     />
   </head>
   <!-- body started here -->
-  <body class="font-manrope">
+  <body class="font-roboto w-full max-w-[1440px] mx-auto border">
     <!-- header section started -->
-    <header></header>
+    <header
+      class="md:min-h-[1000px] w-full px-5 md:bg-[url(./images/banner.png)] bg-no-repeat bg-right-top"
+    >
+      <nav
+        class="w-full max-w-[1150px] mx-auto flex justify-between items-center py-2"
+      >
+        <!-- left -->
+        <div>
+          <ul
+            class="flex items-center gap-5 md:gap-10 lg:gap-14 text-base text-blue-800"
+          >
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- center -->
+        <div>
+          <h3 class="text-2xl font-extrabold text-blue-900">Landing</h3>
+        </div>
+
+        <!-- right -->
+        <div>
+          <button class="px-16 text-white bg-blue-950 py-1">Buy Now</button>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+      <section class="w-full md:min-h-[1000px]">
+        <div
+          class="w-full max-w-[1150px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:min-h-[1000px]"
+        >
+          <!-- first part -->
+          <div>
+            <h2 class="text-2xl md:text-4xl lg:text-5xl text-blue-800 mb-3">
+              Introduce Your Product Quickly & Effectively
+            </h2>
+            <p class="text-blue-800">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus
+              <br />
+              mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+              quis, sem. Nulla consequat massa quis enim.
+            </p>
+            <!-- buttons -->
+            <div class="mt-16">
+              <button
+                class="px-12 text-white bg-blue-950 py-1 hover:bg-white hover:text-blue-950 hover:border hover:border-blue-950 border border-blue-950 transition duration-300"
+              >
+                Purchase UI Kit
+              </button>
+              <button
+                class="px-12 text-white bg-blue-950 py-1 hover:bg-white hover:text-blue-950 hover:border-blue-950 border border-blue-950 transition duration-300"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- second part -->
+          <div></div>
+        </div>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
     <!-- JavaScript -->
